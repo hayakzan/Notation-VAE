@@ -124,8 +124,7 @@ class VariationalAutoencoder:
             os.makedirs(path)
 
         checkpoint = ModelCheckpoint(
-            ##os.path.join(path, "weights.h5"),
-            model.save("/content/gdrive/My Drive/weights"),
+            filepath="/content/gdrive/My Drive/weights",
             save_weights_only=True,
             verbose=1,
         )
