@@ -118,7 +118,7 @@ def animate_morph_images(image_1, image_2, encoder, decoder, n_steps=60, loop=Tr
     return mpy.ImageSequenceClip(morph_images, fps=30)
 
 
-def load_model(path=DEFAULT_MODEL_PATH):
+def load_model(path="trained_model"):
     with open(os.path.join(path, "params.pkl"), "rb") as f:
         params = pickle.load(f)
 
