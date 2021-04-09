@@ -1,6 +1,6 @@
 # Musical texture generation via VAE
 
-Ongoing experiment to generate musical notation from 2D graphic representations via a variational autoencoder. The repo includes the VAE code based on https://github.com/iechevarria/lego-face-VAE and code to translate the resultant lines into (quasi-)conventional musical notation.
+Ongoing experiment to generate musical notation from 2D graphic representations via a variational autoencoder. The repo includes code to generate the gesture graphs, the VAE code based on https://github.com/iechevarria/lego-face-VAE and code to translate the resultant graphs into (quasi-)conventional musical notation.
 
 ## Contents
 
