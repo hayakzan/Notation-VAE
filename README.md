@@ -6,7 +6,7 @@ Ongoing experiment to generate musical notation from 2D graphic representations 
 
 | dir/file  | description |
 | ------------- | ------------- |
-| gestures/graphs/graphs.pde | Java code (to be usedunder Processing framework) that generates 16x16 graphs that represent musical gestures and constitutes the dataset for the VAE | 
+| gestures/graphs/graphs.pde | Java code (under Processing framework) that generates 16x16 graphs that represent musical gestures and constitutes the dataset for the VAE | 
 | gestures/Gestures_to_Pixels.ipynb	| Reads through an BW image, or the output of the VAE and puts the values into a matrix of pixels |
 | gestures/Pixels_to_Notation.py	| Reads through the matrix and generates musical notation |
 | ml/utils.py	  | Utilities for loading data and for making plots |
