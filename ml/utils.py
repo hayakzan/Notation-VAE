@@ -99,6 +99,9 @@ def plot_morph_images(image_1, image_2, encoder, decoder, n_steps=10):
         sub = fig.add_subplot(1, n_steps, i + 1)
         sub.axis("off")
         sub.imshow(img)
+        sub.savefig('foo'+str(i)+'.png')
+        sub.close()
+
 
 
 def animate_morph_images(image_1, image_2, encoder, decoder, n_steps=60, loop=True):
