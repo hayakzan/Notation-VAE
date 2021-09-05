@@ -98,7 +98,7 @@ def plot_morph_images(image_1, image_2, encoder, decoder, n_steps=10):
         img = morph_img.squeeze()
         sub = fig.add_subplot(1, n_steps, i + 1)
         sub.axis("off")
-        plt..resize((16, 16)).imsave('foo'+str(i)+'.png', img)
+        plt.resize((16, 16)).imsave('foo'+str(i)+'.png', img)
         plt.close()
         sub.imshow(img)
 
