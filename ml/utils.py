@@ -91,14 +91,15 @@ def generate_morph_images(image_1, image_2, encoder, decoder, n_steps):
 def plot_morph_images(image_1, image_2, encoder, decoder, n_steps=10):
     morph_images = generate_morph_images(image_1, image_2, encoder, decoder, n_steps)
 
-    fig = plt.figure(figsize=(15, 3))
+    #fig = plt.figure(figsize=(15, 3))
+    fig = plt.figure()
     fig.subplots_adjust(hspace=0.4, wspace=0.4)
 
     for i, morph_img in enumerate(morph_images):
         img = morph_img.squeeze()
         sub = fig.add_subplot(1, n_steps, i + 1)
         sub.axis("off")
-        plt.resize((16, 16)).imsave('foo'+str(i)+'.png', img)
+        plt.imsave('foo'+str(i)+'.png', img)
         plt.close()
         sub.imshow(img)
 
