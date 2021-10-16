@@ -114,9 +114,9 @@ class VariationalAutoencoder:
             kl_loss = vae_kl_loss(y_true, y_pred)
             return r_loss + kl_loss
 
-        #optimizer = Adam(lr=lr)
+        optimizer = Adam(lr=lr)
         self.model.compile(
-            optimizer="adam", loss=vae_loss, metrics=[vae_r_loss, vae_kl_loss]
+            optimizer=optimizer, loss=vae_loss, metrics=[vae_r_loss, vae_kl_loss]
         )
 
     def train(self, train_data, batch_size, epochs, path=DEFAULT_MODEL_PATH):
