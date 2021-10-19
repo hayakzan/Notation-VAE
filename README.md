@@ -13,4 +13,3 @@ Ongoing experiment to generate musical notation from 2D graphic representations 
 | ml/variational_autoencoder.py	  | Defines the VAE model |
 | trained_model/ | Pretrained model params and weights |
 | gesture_VAE.ipynb	| Notebook to train and evaluate models |
-| dataset.zip	| Zipped directory of training images |
